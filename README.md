@@ -59,7 +59,7 @@ Enjoy!
 Install the package via npm:
 
 ```bash
-npm install vue3-jsbarcode jsbarcode
+npm install vue-jsbarcode jsbarcode
 ```
 
 - `vue3-jsbarcode`: The Vue 3 component
