@@ -3,7 +3,7 @@ VueJsBarcode
 
 A Vue 3 component wrapper for [JsBarcode](https://github.com/lindell/JsBarcode), allowing you to generate barcodes in your Vue3.js applications easily. This component supports multiple barcode formats and is fully customizable via props that map directly to JsBarcode options.
 
-The existing JsBarcode port for Vue 3 [vue-barcode](https://www.npmjs.com/package/vue-barcode) works well for most cases except its dependencies have not been updated for some time, which necessitated a new port. In addition, I required ability to allow multiple barcodes on the same page, which didn't work in [vue-barcode] due to the way the barcode element was selected. This has been fixed in this port. 
+The existing JsBarcode port for Vue 3 [vue3-barcode](https://www.npmjs.com/package/vue3-barcode) works well for most cases except its dependencies have not been updated for some time, which necessitated a new port. In addition, I required ability to allow multiple barcodes on the same page, which didn't work in vue3-barcode due to the way the barcode element was selected. This has been fixed in this port. 
 
 Since its a port of JsBarcode, all functionality available should work in the same manner. I used an AI to quickly pull up the following documentation. 
 
