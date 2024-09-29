@@ -3,7 +3,7 @@ VueJsBarcode
 
 A Vue 3 component wrapper for [JsBarcode](https://github.com/lindell/JsBarcode), allowing you to generate barcodes in your Vue3.js applications easily. This component supports multiple barcode formats and is fully customizable via props that map directly to JsBarcode options.
 
-The existing JsBarcode port for Vue 3 [vue3-barcode](https://www.npmjs.com/package/vue3-barcode) works well for most cases except its dependencies have not been updated for some time, which necessitated a new port. In addition, I required ability to allow multiple barcodes on the same page, which didn't work in [vue3-barcode] due to the way the barcode element was selected. This has been fixed in this port. 
+The existing JsBarcode port for Vue 3 [vue-barcode](https://www.npmjs.com/package/vue-barcode) works well for most cases except its dependencies have not been updated for some time, which necessitated a new port. In addition, I required ability to allow multiple barcodes on the same page, which didn't work in [vue-barcode] due to the way the barcode element was selected. This has been fixed in this port. 
 
 Since its a port of JsBarcode, all functionality available should work in the same manner. I used an AI to quickly pull up the following documentation. 
 
@@ -62,7 +62,7 @@ Install the package via npm:
 npm install vue-jsbarcode jsbarcode
 ```
 
-- `vue3-jsbarcode`: The Vue 3 component
+- `vue-jsbarcode`: The Vue 3 component
 - `jsbarcode`: The underlying barcode generation library
 
 Note: `jsbarcode` is listed as a peer dependency and must be installed separately.
@@ -75,7 +75,7 @@ Register the component globally in your main application file (e.g., `main.js`):
 ```javascript
 import { createApp } from 'vue';
 import App from './App.vue';
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 
 const app = createApp(App);
 app.use(VueJsBarcode);
@@ -90,7 +90,7 @@ Import and register the component locally in your Vue component:
 ```vue
 <script>
 import { defineComponent } from 'vue';
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 
 export default defineComponent({
     components: {
@@ -110,7 +110,7 @@ If you're using the `<script setup>` syntax:
 </template>
 
 <script setup>
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 import { ref } from 'vue';
 
 const barcodeValue = ref('1234567890');
@@ -126,7 +126,7 @@ const barcodeValue = ref('1234567890');
 
 <script>
 import { defineComponent, ref } from 'vue';
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 
 export default defineComponent({
     components: {
@@ -323,7 +323,7 @@ Usage:
 
 <script>
 import { defineComponent } from 'vue';
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 
 export default defineComponent({
     components: {
@@ -355,7 +355,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue';
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 
 export default defineComponent({
     components: {
@@ -378,7 +378,7 @@ export default defineComponent({
 </template>
 
 <script setup>
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 import { ref } from 'vue';
 
 const barcodeValue = ref('9876543210');
@@ -402,7 +402,7 @@ const barcodeValue = ref('9876543210');
 
 <script>
 import { defineComponent } from 'vue';
-import VueJsBarcode from 'vue3-jsbarcode';
+import VueJsBarcode from 'vue-jsbarcode';
 
 export default defineComponent({
     components: {
